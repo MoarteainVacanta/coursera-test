@@ -1,0 +1,73 @@
+{
+  "days": ["Luni", "Marti", "Miercuri", "Joi", "Vineri"],
+  "periods": [
+    "08:00-08:50",
+    "09:00-09:50",
+    "10:00-10:50",
+    "11:00-11:50",
+    "12:00-12:50",
+    "13:00-13:50"
+  ],
+  "rooms": [
+    { "id": "R1", "name": "Sala 101", "capacity": 30 },
+    { "id": "R2", "name": "Sala 102", "capacity": 30 },
+    { "id": "R3", "name": "Laborator Informatica", "capacity": 25 },
+    { "id": "R4", "name": "Sala de Sport" }
+  ],
+  "teachers": [
+    { "id": "T1", "name": "Prof. Ionescu", "subjects": ["Matematica"] },
+    { "id": "T2", "name": "Prof. Popescu", "subjects": ["Romana"] },
+    { "id": "T3", "name": "Prof. Georgescu", "subjects": ["Engleza", "Franceza"] },
+    {
+      "id": "T4",
+      "name": "Prof. Dumitrescu",
+      "subjects": ["Informatica", "Fizica"],
+      "max_lessons_per_day": 4
+    },
+    {
+      "id": "T5",
+      "name": "Prof. Constantin",
+      "subjects": ["Sport"],
+      "unavailable": [["Vineri", 4], ["Vineri", 5]]
+    },
+    { "id": "T6", "name": "Prof. Stan", "subjects": ["Istorie", "Geografie"] }
+  ],
+  "classes": [
+    {
+      "id": "C1",
+      "name": "Clasa a V-a A",
+      "subjects": [
+        { "subject": "Matematica", "teacher": "T1", "hours_per_week": 4 },
+        { "subject": "Romana", "teacher": "T2", "hours_per_week": 4 },
+        { "subject": "Engleza", "teacher": "T3", "hours_per_week": 3 },
+        { "subject": "Informatica", "teacher": "T4", "hours_per_week": 2, "room": "R3" },
+        { "subject": "Sport", "teacher": "T5", "hours_per_week": 2, "room": "R4" },
+        { "subject": "Istorie", "teacher": "T6", "hours_per_week": 2 }
+      ]
+    },
+    {
+      "id": "C2",
+      "name": "Clasa a V-a B",
+      "subjects": [
+        { "subject": "Matematica", "teacher": "T1", "hours_per_week": 4 },
+        { "subject": "Romana", "teacher": "T2", "hours_per_week": 4 },
+        { "subject": "Franceza", "teacher": "T3", "hours_per_week": 3 },
+        { "subject": "Informatica", "teacher": "T4", "hours_per_week": 2, "room": "R3" },
+        { "subject": "Sport", "teacher": "T5", "hours_per_week": 2, "room": "R4" },
+        { "subject": "Geografie", "teacher": "T6", "hours_per_week": 2 }
+      ]
+    },
+    {
+      "id": "C3",
+      "name": "Clasa a VI-a A",
+      "subjects": [
+        { "subject": "Matematica", "teacher": "T1", "hours_per_week": 4 },
+        { "subject": "Romana", "teacher": "T2", "hours_per_week": 3 },
+        { "subject": "Engleza", "teacher": "T3", "hours_per_week": 2 },
+        { "subject": "Fizica", "teacher": "T4", "hours_per_week": 2 },
+        { "subject": "Sport", "teacher": "T5", "hours_per_week": 2, "room": "R4" },
+        { "subject": "Istorie", "teacher": "T6", "hours_per_week": 2 }
+      ]
+    }
+  ]
+}
